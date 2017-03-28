@@ -1,0 +1,43 @@
+*Today's Challenge:* _Picking Numbers_ 👨‍💻👨‍💻👨‍💻
+
+Given an array of integers, find and print the maximum number of integers you can select from the array such that the absolute difference between any two of the chosen integers is _<= 1_.
+
+*Input Format*
+
+The first line contains a single integer, _n_, denoting the size of the array. 
+The second line contains _n_ spaces-separated integers describing the respective values of _*a*0, *a*1, ..., *a*n-1_.
+
+*Constraints*
+• _2<= n <= 100_
+• _2<= *a*i <= 100_
+• The answer will be _>=2_.
+
+*Output Format*
+
+A single integer denoting the maximum number of integers you can choose from the array such that the absolute difference between any two of the chosen integers is _<=1_.
+
+*Sample Input 0*
+```
+6 
+4 6 5 3 3 1 ```
+
+*Sample Output 0*
+```
+3 ```
+
+*Explanation 0*
+
+We choose the following multiset of integers from the array: _{4, 3, 3}_. Each pair in the multiset has an absolute difference  _<= 1_ (i.e., _|4 - 3| = 1_  and _|3 - 3| = 0_ ), so we print the number of chosen integers, ```3```, as our answer.
+
+*Sample Input 1*
+```
+6 
+1 2 2 3 1 2 ```
+
+*Sample Output 1*
+```
+5 ```
+
+*Explanation 1*
+
+We choose the following multiset of integers from the array: _{1, 2, 2, 1, 2}_. Each pair in the multiset has an absolute difference _<= 1_ (i.e., _|1 - 2| = 1_, _|1 - 1| = 1_, and _|1 - 2| = 1_), so we print the number of chosen integers, ```5```, as our answer.
