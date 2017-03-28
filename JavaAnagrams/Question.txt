@@ -1,0 +1,33 @@
+_Java Anagram_
+
+Two strings  _A_ and  _B_ are called anagrams if they consist same characters, but may be in different orders. So the list of anagrams of _CAT_  is  _CAT, ACT, TAC, TCA , ATC, CTA_.
+
+Given two strings, print ```Anagrams``` if they are anagrams, print ```Not Anagrams``` if they are not. The strings may consist at most  _50_ English characters; the comparison should NOT be case sensitive.
+
+This exercise will verify that you can sort the characters of a string, or compare frequencies of characters.
+
+*Sample Input 0*
+```
+anagram margana ```
+
+*Sample Output 0*
+```
+Anagrams ```
+
+*Sample Input 1*
+```
+anagramm marganaa ```
+
+*Sample Output 1:*
+```
+Not Anagrams```
+
+
+*Explanation*
+Order the characters in _anagram_ and you have _aaagmnr_
+
+Order the characters in _margana_ and you have _aaagmnr_
+
+Then compare. 
+
+And since they are the same, you print ```ANAGRAM```.
