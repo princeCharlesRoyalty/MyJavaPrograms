@@ -12,8 +12,7 @@
 ********* Last Updated *                            Sunday, March 19, 2017 @ 7:18 AM                           *********
 ***********************************************************************************************************************/
 
-import java.util.Scanner;
-
+import java.util.Scanner;  
 public class PalidromeManipulation {
 
 	static boolean isPalindrome = false;
