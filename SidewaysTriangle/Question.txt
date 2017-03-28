@@ -1,0 +1,13 @@
+_A  SIDEWAYS TRIANGLE_ 
+
+Write  a program that uses  only two  output statements,  System.out.print("#")  and  System.out.print("\n"), to  produce  a  pattern  of hash  symbols  shaped  like  a  sideways  triangle: 
+```
+# 
+## 
+### 
+#### 
+### 
+## 
+#```
+
+_Hint: Use *for loops*_
