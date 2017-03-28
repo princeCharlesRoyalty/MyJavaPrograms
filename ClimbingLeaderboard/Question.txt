@@ -1,0 +1,49 @@
+ _Climbing the Leaderboard_ 
+
+Alice is playing an arcade game and wants to climb to the top of the leaderboard. Can you help her track her ranking as she beats each level? The game uses Dense Ranking, so its leaderboard works like this:
+
+ • The player with the highest score is ranked number _1_ on the leaderboard.
+ • Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number.
+
+For example, four players have the scores _100, 90, 90_, and _80_. Those players will have ranks _1, 2, 2_, and _3_, respectively.
+
+When Alice starts playing, there are already _n_ people on the leaderboard. The score of each player _i_ is denoted by _*S*i_. Alice plays for _m_ levels, and we denote her total score after passing each level _j_ as _*alice*j_. After completing each level, Alice wants to know her current rank.
+
+You are given an array, _*scores*_, of decreasing leaderboard scores, and another array, _*alice*_, of Alice's cumulative scores for each level of the game. You must print _m_ integers. The _*j*th_ integer should indicate the current rank of alice after passing the _*j*th_ level.
+
+*Input Format*
+
+The first line contains an integer, _n_, denoting the number of players already on the leaderboard. 
+The next line contains _n_ space-separated integers describing the respective values of _*scores*0, *scores*1, ..., *scores*n-1_. 
+The next line contains an integer, _m_, denoting the number of levels Alice beats. 
+The last line contains _m_ space-separated integers describing the respective values of _*alice*0, *alice*1, ..., *alice*m-1_.
+
+*Constraints*
+ • 1<= _n_ <= 2*10^5
+ • 1<= _m_ <= 2*10^5
+ • 0 <= _*scores*i_  <= 10^9 for 0 <= _i_ < _n_
+  • 0 <= _*alice*j_ <= 10^9 for 0 <= _j_ < _m_
+ • The existing leaderboard, _*scores*_, is indescending order.
+ • Alice's scores are cumulative, so _*alice*_ is in ascending order.
+
+
+*Output Format*
+
+Print _m_ integers. The _*j*th_ integer should indicate the rank of alice after passing the _*j*th_ level.
+
+*Sample Input 0*
+```
+7 
+100 100 50 40 40 20 10 
+4 
+5 25 50 120 ```
+
+*Sample Output 0*
+```
+6 
+4 
+2 
+1 ```
+
+*Explanation 0*
+_See image_
