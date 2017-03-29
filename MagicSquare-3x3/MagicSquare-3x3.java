@@ -1,8 +1,8 @@
 /************************************************************************************
-********* Program Name    *                MagicSquare(3x3)                *********
+********* Program Name    *                Magic Square(3x3)                *********
 *************************************************************************************
 *********                 *       A program to place the numbers 1 - 9      *********
-*********   Purpose       *                   in a 3 x 3 grid,              *********
+*********   Purpose       *                  in a 3 x 3 grid,               *********
 *********   of the        *        one number such that the vertical,       *********
 *********   Program       *           horizontal, and   diagonal            *********
 *********                 *              sums are all the same.             *********
@@ -11,7 +11,7 @@
 *************************************************************************************
 ********* Github Username *                @princeCharlesRoyalty            *********
 *************************************************************************************
-********* Last Updated    *       Wednesday, March 29, 2017 @ 5:11 PM       *********
+********* Last Updated    *       Wednesday, March 28, 2017 @ 7:11 PM       *********
 ************************************************************************************/
 
 public class MagicSquare {
@@ -44,13 +44,28 @@ public class MagicSquare {
 			}
 		}
 		for(int r = 0; r < size; r++){
-			for(int c=0; c < size; c++){
-				System.out.print(magicSquare[r][c] +" ");
+			if(r==0){
+				boxingTopBottom();
+				System.out.println();
 			}
-			System.out.print("\n");
+			
+			for(int c=0; c < size; c++){
+				System.out.print("| " + magicSquare[r][c] +" ");
+			}
+			
+			System.out.println("|");
+			boxingTopBottom();
+			System.out.println();
 		}
 			
 				
+	}
+	static void boxingTopBottom(){
+		int counter = 3;
+		System.out.print("+");
+		while(counter-->0){
+			System.out.print("---+");
+		}
 	}
 
 }
